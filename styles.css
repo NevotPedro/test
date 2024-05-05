@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+form {
+  background-color: #fff;
+  height: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 10px;
+  position: relative;
+  animation: float 8s ease-in-out infinite;
+  box-shadow: 10px 15px 15px 0px rgba(0, 0, 0, 0.2); /* Agregué sombra al formulario */
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+  background-color: #4f4949;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 7px;
+}
+
+textarea {
+  height: 180px;
+  margin-top: 7px;
+  border-radius: 10px;
+  background-color: #4f4949;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #4f4949;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #4f4949;
+}
+
+@keyframes float {
+  0% {
+    top: -50px;
+  }
+  50% {
+    top: 50px;
+  }
+  100% {
+    top: -50px;
+  }
+}
